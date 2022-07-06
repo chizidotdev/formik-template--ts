@@ -1,4 +1,4 @@
-<center> <h1>Reusable Form Component</h1> </center>
+<h1 align="center">Reusable Form Component</h1>
 
 <p align="center">
   <img src="./demo.png" alt="demo preview" width="500"/>
