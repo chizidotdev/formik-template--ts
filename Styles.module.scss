@@ -1,0 +1,51 @@
+.error {
+  width: max-content;
+  position: relative;
+  bottom: 7px;
+  left: 15px;
+
+  color: red;
+  font-size: 12px;
+}
+
+.form {
+  position: relative;
+}
+
+.submit {
+  cursor: pointer;
+
+  &:disabled,
+  &[disabled] {
+    background: gray;
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+  }
+}
+
+.input {
+  font-size: 14px;
+  width: 100%;
+  background: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1.5rem;
+  outline: none;
+  border: 1px solid #2f3733;
+  border-radius: 48px;
+}
+
+.select {
+  margin-bottom: 2rem;
+  position: relative;
+
+  &:nth-last-of-type(1) {
+    margin-bottom: 1rem;
+  }
+
+  .error {
+    position: relative;
+    bottom: 0;
+    color: red;
+  }
+}
