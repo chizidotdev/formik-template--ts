@@ -2,8 +2,7 @@
 
 Multiple form control elements: input, textarea, select and radio.
 
-![demo preview](./demo.png)
-<img src="./demo.png" alt="demo preview" width="200"/>
+<img src="./demo.png" alt="demo preview" width="400"/>
 
 #### Libraries Used
 
