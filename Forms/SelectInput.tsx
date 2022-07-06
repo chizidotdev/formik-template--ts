@@ -1,7 +1,8 @@
-import { useField } from 'formik';
-import Select from 'react-select';
-import styles from './Styles.module.scss';
-import TextError from './TextError';
+import React from "react";
+import { useField } from "formik";
+import Select from "react-select";
+import styles from "./Styles.module.scss";
+import TextError from "./TextError";
 
 export interface OptionProps {
   label: string;
@@ -15,7 +16,7 @@ export interface valuesProps {
   state: string;
 }
 
-export interface villageProps {
+export interface customProps {
   label: string;
   value: string;
 }
@@ -25,7 +26,9 @@ interface SelectInputProps {
   placeholder?: string;
   name: string;
   values: valuesProps;
-  addVillageHandler?: (village: villageProps) => void;
+}
+interface CustomSelectInputProps extends SelectInputProps {
+  handleSumbit?: (option: customProps) => void;
 }
 
 export default function SelectInput({ ...props }: SelectInputProps) {
@@ -46,10 +49,8 @@ export default function SelectInput({ ...props }: SelectInputProps) {
   );
 }
 
-export const CustomSelectInput: React.FC<SelectInputProps> = (props) => {
+export const CustomSelectInput: React.FC<CustomSelectInputProps> = (props) => {
   const [field, meta, helpers] = useField(props);
-
-  // console.log('props===========', props);
 
   return (
     <div className={styles.select}>
@@ -60,7 +61,7 @@ export const CustomSelectInput: React.FC<SelectInputProps> = (props) => {
         onChange={(option) => {
           if (option) {
             helpers.setValue(option.value);
-            props.addVillageHandler!(option);
+            props.handleSumbit!(option);
           }
         }}
         name={field.name}

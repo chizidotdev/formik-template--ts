@@ -43,9 +43,17 @@
     margin-bottom: 1rem;
   }
 
-  .error {
-    position: relative;
-    bottom: 0;
-    color: red;
+  &__control {
+    padding-left: 1rem;
+    border: 1px solid !important;
+    border-radius: 48px !important;
+  }
+
+  &__placeholder {
+    color: var(--text-color-4) !important;
+  }
+
+  &-container {
+    font-size: 14px;
   }
 }
