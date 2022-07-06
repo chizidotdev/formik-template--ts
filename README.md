@@ -89,7 +89,7 @@ Default values from the Formik component, passed down as props down to the form 
 values = { values }; //required
 ```
 
-The type of form input rendered, can be input, textarea, select, or radio.
+The type of form input rendered, can be "input", "textarea", "select", or "radio".
 
 ```typescript
 control = "string"; //required
@@ -107,7 +107,7 @@ Form input name. **_This must correspond with the name set in the initialValues 
 name = "string"; //required
 ```
 
-Optional, defaults to "text" type...
+Optional, defaults to "text" type... Can be "email", "password", etc...
 
 ```typescript
 type = "string";
