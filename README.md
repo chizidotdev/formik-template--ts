@@ -1,10 +1,11 @@
+<center> <h1>Reusable Form Component</h1> </center>
+
 <p align="center">
-  # Reusable Form Component
+  <img src="./demo.png" alt="demo preview" width="500"/>
+</p>
 
+<p align="center">
   Multiple form control elements: input, textarea, select and radio.
-
-
-  <img src="./demo.png" alt="demo preview" width="400"/>
 </p>
 
 #### Libraries Used
@@ -134,7 +135,7 @@ Example: const stateOptions = [
 ];
 ```
 
-#### !! Important
+## !! Important
 
 When using with **NextJS** server-side-rendering...
 
